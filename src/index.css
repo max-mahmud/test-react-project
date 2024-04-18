@@ -1,0 +1,38 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  height: 50vh !important;
+}
+
+.light{
+  background: #e6b7da;
+  padding: 8px;
+  color: rgb(3, 31, 56);
+}
+
+.dark{
+  padding: 8px;
+  background: #423939;
+  color: rgb(50, 163, 5);
+}
+
+button{
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #423939;
+  color: antiquewhite;
+}
+.mx-2{
+  margin: 0 10px;
+  padding: 4px 15px ;
+  background-color: #423939;
+  color: azure;
+}
+.bg-dark{
+  background-color: rgb(130, 136, 135);
+  margin: 10px;
+  padding: 20px;
+}
