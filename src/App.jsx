@@ -14,7 +14,14 @@ import DropDown from "./practical/DropDown";
 import CheckboxGroupWithCheckAll from "./practical2/ALlCheck";
 import Accordion from "./practical2/Accordian";
 import Example from "./Example";
-import { Counter, DynamicForm, InfiniteScroll, Pagination, PasswordGenerator } from "./ytPractical/index";
+import {
+  Counter,
+  DynamicForm,
+  InfiniteScroll,
+  Pagination,
+  PasswordGenerator,
+  TrafficLight,
+} from "./ytPractical/index";
 import Reducer from "./cmp/Reducer";
 import Tabs from "./practical2/Tabs";
 import Forms from "./practical2/Forms";
@@ -48,10 +55,11 @@ const App = () => {
       {/* =================================== */}
       {/* <Counter /> */}
       {/* <PasswordGenerator /> */}
-      {/* // TODO <Pagination /> */} 
+      {/* // TODO <Pagination /> */}
       {/* <InfiniteScroll /> */}
       {/* <Login /> */}
       <DynamicForm />
+      <TrafficLight />
     </div>
   );
 };
