@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import FetchData from "./practical/FetchData";
 import Timer from "./practical/Timer";
@@ -28,8 +28,19 @@ import Forms from "./practical2/Forms";
 import Check from "./cmp/Check";
 import SerchFilter from "./practical2/SerchFilter";
 import Login from "./Login";
+import Game from "./tic-tac-toe/Game";
+import Pc from "./practical2/Pc";
 
 const App = () => {
+
+  const fetchData =async()=>{
+    const response =await fetch("https://ecom-backend-iuv5.onrender.com");
+    const data = await response.json();
+    console.log(data);
+  }
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div>
       {/* <DropDown /> */}
@@ -47,7 +58,7 @@ const App = () => {
       {/* <Timer /> */}
 
       {/* <Example /> */}
-      {/* <Counter /> */}
+      <Counter />
       {/* <Reducer /> */}
       {/* <Tabs /> */}
       {/* <Forms /> */}
@@ -58,8 +69,10 @@ const App = () => {
       {/* // TODO <Pagination /> */}
       {/* <InfiniteScroll /> */}
       {/* <Login /> */}
-      <DynamicForm />
-      <TrafficLight />
+      {/* <DynamicForm /> */}
+      {/* <TrafficLight /> */}
+      {/* <Game /> */}
+      <Pc/>
     </div>
   );
 };
